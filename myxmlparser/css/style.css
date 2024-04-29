@@ -1,0 +1,192 @@
+:root {
+    background-color: aliceblue;
+    font-family: 'Calibri', 'Roboto', sans-serif;
+    border: solid 1px black;
+}
+
+html {
+    position: relative;
+    min-height: 99%;
+}
+
+#header {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#header h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#changepn {
+    margin: auto;
+}
+
+#entry {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 78%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#data {
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+th {
+    text-align: left;
+}
+
+li {
+    list-style-type: none;
+}
+#specifications {
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 78%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#buildspecs {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 20%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    /* position: fixed;
+    top: 10px;
+    right: 10px; */
+    /* float: right; */
+}
+
+ul.specs {
+    margin: 0;
+    padding: 0;
+}
+
+
+.statements p {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+}
+.signatory {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    /* padding-bottom: 1px; */
+}
+
+footer {
+    /* background-color: orange; */
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    font-size: small;
+}
+
+#specdialog {
+    width: 55%;
+    height: 80%;
+
+}
+#specdialog h2 {
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+}
+#specform {
+    display: grid;
+    grid-template-columns: 5%, 95%;
+}
+#specform input {
+    grid-column-start: 1;
+    border: solid 1px black;
+}
+#specform label {
+    /* border: solid 1px black; */
+    grid-column-start: 2;
+    font-size: larger;
+}
+#specform button {
+    border: solid 1px black;
+    font-size: x-large;
+}
+#dialog-save {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* Media query print section */
+@media print {
+    .hideonprint {
+        display: none;
+    }
+    #entry {
+        visibility: hidden;
+        margin-bottom: 0;
+    }
+
+    #data,
+    #data * {
+        visibility: visible;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    #header {
+        padding-top: 0;
+    }
+    #header, #specifications, #data {
+        border-radius: none;
+        box-shadow: none;
+        scale: 0.8;
+    }
+    #editspecs {
+        display: none;
+    }
+
+    
+}

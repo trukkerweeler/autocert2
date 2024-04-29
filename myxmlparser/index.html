@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cert.mjs" defer></script>
+    <title>AUTOCERT2</title>
+</head>
+<body>
+    <div id="entry">
+        <p>Export to XML from 'Shop Floor Control>W.O. Serial Numbers' report</p>
+        <input type="text" id="woid" placeholder="Enter WO" value="121707">
+        <button id="btn">Search</button>
+    </div>
+    <dialog id="changepndialog">
+        <h2>Choose Part Number</h2>
+        <form action="updatepn" id="form">
+            <select id="otherpartnumbers"></select>
+        </form>
+        <button id="submitpnchange">Apply</button>
+        <button id="dialog-close">Close</button>
+    </dialog>
+
+    <header id="header">
+        <h1>CERTIFICATE OF CONFORMANCE</h1>
+        <h2 id="pn"></h2>
+        <button id="changepn" class="hideonprint">Change</button>
+    </header>
+    <main>
+        <div id="container">
+            <!-- <h2>Build Materials</h2> -->
+            <div>                
+                <table id="data">                  
+                </table>
+            </div>
+            <div id="specifications">
+                <button id="buildspecs">Build WO Specs</button>
+                <h2>Applicable Process Specifications</h2>
+                <!-- <button id="editspecs">Edit WO Specs</button>
+                <dialog id="specdialog">
+                    <h2>Choose Applicable Process Specifications</h2>
+                    <form action="" id="specform">
+                    </form>
+                    <button id="dialog-close">Close</button>
+                </dialog>
+                <div id="chosenspecs"></div> -->
+
+
+            </div>
+            <div class="statements">
+                <!-- <p>I certify that the listed materials were processed in conformance to applicable specifications and the latest drawing revisions on record.</p> -->
+                <p>Materials were processed in accordance with the requirements of the applicable specifications and the latest drawing revisions on record.</p>
+                <br>
+                <br>
+                <p class="signatory">R.Matsamas</p>
+                <p class="signatory">Quality Control</p>
+                <!-- Add current date -->
+                <p class="signatory">Date: <span id="date"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>Form 8600-1 Rev. 01</footer>
+</body>
+
+</html>

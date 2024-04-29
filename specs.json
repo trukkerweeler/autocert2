@@ -1,0 +1,14 @@
+{
+    "AMS2700II": "Passivation AMS2700 A967",
+    "AMS2700VI": "Passivation AMS2700 Type VI (Citric)",
+    "QQ-P-35II": "Passivation QQ-P-35 Type II",
+    "QQ-P-35VI": "Passivation QQ-P-35 Type VI (Citric)",
+    "ASTM-A967II": "A967 Passivation Type II",
+    "ASTM-A967VI": "A967 Passivation Type VI (Citric)",
+    "MIL-C-5541I": "MIL-C-5541 Chemical Conversion Coating Type I",
+    "MIL-C-5541II": "MIL-C-5541 Chemical Conversion Coatings Type II",
+    "AMS2770": "AMS2770 Heat Treatment (Al)",
+    "D17.1": "D17.1 Fusion Welding",
+    "D17.2": "D17.2 Spot Welding"
+
+}
